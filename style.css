@@ -1,0 +1,142 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  padding: 20px;
+  background-color: #292945;
+}
+
+/* Menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 5px 0;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #3e3e60;
+  color: #00ff4c;
+}
+
+/* Perfil */
+.profile {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+
+/* Conteúdo */
+.content {
+  flex: 1;
+  padding: 100px;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+}
+
+/* Hero */
+.hero {
+  background-color: #1e1e2f;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1 1 350px;
+  min-height: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #292945;
+}
+
+.card p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Rodapé */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #777;
+}
